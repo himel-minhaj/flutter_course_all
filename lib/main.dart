@@ -14,11 +14,12 @@ main(){
     k++;
   }while(k<=10);
 
-  int l=1;
+  int m=1;
   do{
-    print('14 x $k=${14*l}');
-    k++;
-  }while(l<=10);
+    print('14 x $m=${14*m}');
+    print('hhhhhh');
+    m++;
+  }while(m<=10);
 
 
 }
