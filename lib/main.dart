@@ -7,10 +7,18 @@ main(){
     print('13 x $j=${13*j}');
     j++;
   }
+
   int k=1;
   do{
     print('14 x $k=${14*k}');
     k++;
   }while(k<=10);
+
+  int l=1;
+  do{
+    print('14 x $k=${14*l}');
+    k++;
+  }while(l<=10);
+
 
 }
