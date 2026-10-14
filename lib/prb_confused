@@ -1,4 +1,4 @@
-decoration: BoxDecoration(
+1- decoration: BoxDecoration(
   color: Colors.white,
   borderRadius: BorderRadius.circular(10),
 ),
@@ -8,7 +8,7 @@ decoration: BoxDecoration(
 - সাধারণত Container-এর BoxDecoration-এর ভিতরে ব্যবহার করবে।
 
 
-Card(
+2- Card(
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(5),
   ),
@@ -18,7 +18,7 @@ Card(
 - borderRadius.circular(5) = কোণা সামান্য গোল।
 - circular(15) দিলে কোণা আরও গোল হবে।
 
-decoration: BoxDecoration(
+3-decoration: BoxDecoration(
   color: Colors.white,
   border: Border.all(
     width: 2,
@@ -28,4 +28,33 @@ decoration: BoxDecoration(
 কাজ: কোনো Container বা কার্ডের চারপাশে লাইন বা বর্ডার তৈরি করবে।
 - width: 2 = বর্ডারের পুরুত্ব।
 - color: Colors.red = বর্ডারের রং লাল।
+
+4-[***1- border: Border.all(
+                      width: 2,
+                      color: Colors.red
+                   ), 
+Hemal, খুব সহজভাবে মনে রাখো 😊 Flutter-এ border: Border.all() ব্যবহার করা হয় কোনো Widget-এর চারপাশে Border দেওয়ার জন্য। তবে এটি সাধারণত BoxDecoration-এর ভিতরে ব্যবহার হয়।
+১. Container-এর মধ্যে
+Container-এর চারপাশে লাল Border দিতে চাইলে:Container(
+  decoration: BoxDecoration(
+    border: Border.all(
+      width: 2,
+      color: Colors.red,
+    ),
+  ),
+  child: Text('Hello'),
+)
+]
+
+5-[*** Card and ElevatedButton এর মধ্যে side: BorderSide() ব্যবহার করা যায়, তবে সরাসরি Card and ElevatedButton-এর property হিসেবে নয়। Card and ElevatedButton-এর shape-এর মধ্যে ব্যবহার করতে হয়।
+
+Card(
+  color: Colors.white,
+  shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(10),
+    side: BorderSide(
+      width: 2,
+      color: Colors.red,
+    ),
+  ),
 
