@@ -1,0 +1,31 @@
+decoration: BoxDecoration(
+  color: Colors.white,
+  borderRadius: BorderRadius.circular(10),
+),
+কাজ: Container-এর চারটি কোণা গোল করবে।
+- circular(10) = ১০ পয়েন্টের গোল কোণা।
+- circular(20) = আরও বেশি গোল কোণা।
+- সাধারণত Container-এর BoxDecoration-এর ভিতরে ব্যবহার করবে।
+
+
+Card(
+  shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(5),
+  ),
+  child: Text("Hello"),
+)
+কাজ: Card, ElevatedButton-এর মতো widget-এর বাইরের আকৃতি ও কোণা নিয়ন্ত্রণ করতে ব্যবহার করবে।
+- borderRadius.circular(5) = কোণা সামান্য গোল।
+- circular(15) দিলে কোণা আরও গোল হবে।
+
+decoration: BoxDecoration(
+  color: Colors.white,
+  border: Border.all(
+    width: 2,
+    color: Colors.red,
+  ),
+),
+কাজ: কোনো Container বা কার্ডের চারপাশে লাইন বা বর্ডার তৈরি করবে।
+- width: 2 = বর্ডারের পুরুত্ব।
+- color: Colors.red = বর্ডারের রং লাল।
+
